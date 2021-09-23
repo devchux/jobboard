@@ -2,7 +2,7 @@ const express = require("express");
 const StaticRouter = express.Router();
 const path = require("path");
 const debug = require("debug")("app:StaticRoutes");
-let Job = require("../models/jobModel");
+let Job = require("../models/JobModel");
 const authUser = require('./auth');
 
 function router(nav) {
