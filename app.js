@@ -17,7 +17,9 @@ const port = process.env.PORT || 8080;
 let mongoose = require('mongoose');
 
 //Set up default mongoose connection
-let mongoURI = process.env.DB_URI;
+let mongoURI = process.env.PROD_DB_URI;
+
+
 mongoose.connect(mongoURI, { 
   useNewUrlParser: true,
   useUnifiedTopology: true })
